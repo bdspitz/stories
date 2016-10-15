@@ -1,0 +1,11 @@
+// Variables
+$white: #fff;
+$background: #ddd;
+$black: #060606;
+$btn: #184db3;
+
+// Placeholders
+%transition-bg {
+	transition: background 0.25s;
+	-webkit-transition: background 0.25s;
+}

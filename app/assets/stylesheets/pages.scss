@@ -1,0 +1,81 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'helpers';
+
+// Button
+.btn {
+	background: $btn;
+	border-radius: 0;
+	border: transparent;
+	color: $white;
+	font-size: 22px;
+	font-weight: 400;
+	padding: 12px 32px;
+	@extend %transition-bg;
+	margin: 0 auto;
+
+	&:hover {
+    	background: darken($btn, 15%);
+		@extend %transition-bg;
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+// Jumbotron
+.jumbotron {
+	position: relative;
+	top: 0;
+	background: image-url("bg1.jpg") no-repeat center center;
+	background-size: cover;
+	height: 880px;
+	margin: 0;
+
+  	.col-md-6 {
+  		text-align: center;
+  		padding: 180px 0;
+
+		h1 {
+			text-align: center;
+			color: $white;
+			font-size: 64px;
+			font-weight: 300;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+// Section text (Supporting, Discover)
+.supporting, .discover {
+	background: $white;
+	color: $black;
+	margin: 0;
+	padding: 100px 0;
+	text-align: center;
+
+	h1 {
+		font-size: 64px;
+		font-weight: 300;
+		padding-bottom: 12px;
+	}
+
+	p {
+		font-size: 30px;
+		font-weight: 300;
+	}
+}
+
+.discover h1 {
+	padding-bottom: 30px;
+}
+
+// Secondary
+.secondary {
+	background: image-url("bg2.jpg") no-repeat center center;
+	background-size: cover;
+	height: 600px;
+	margin: 0;
+}
+

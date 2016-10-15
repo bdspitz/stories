@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'helpers';
+
+// Pagewide styles
+html, body {
+	font-family: "Source Sans Pro", sans-serif;
+	margin: 0;
+	padding: 0;
+	background: $background;
+}
+
+// Nav menu button
+#menu-button {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	z-index: 90;
+
+	img {
+		height: 32px;
+		width: 32px;
+		cursor: pointer;
+	}
+}
+
+
+// Nav menu
+#nav-menu {
+	position: fixed;
+	top: 0;
+	left: -300px;
+	width: 300px;
+	height: 100%;
+	background: lighten($black, 3%);
+	z-index: 100;
+	margin: 0;
+
+	.menu-toggle {
+		position: absolute;
+		top: 40px;
+		right: 36px;
+		height: 32px;
+		width: 32px;
+		display: inline-block;
+		padding: 0;
+		cursor: pointer;
+		z-index: 101;
+	}
+
+	ul {
+		list-style: none;
+		font-weight: 300;
+		padding: 0;
+
+		li a {
+			position: relative;
+			display: block;
+			padding: 10px;
+			text-decoration: none;
+			color: $white;
+			font-size: 24px;
+			padding: 40px 36px;
+			margin-right: 25px;
+		}
+	}
+}
+
+// Footer
+.footer {
+	background: darken($white, 5%);
+	text-align: center;
+	padding: 50px;
+
+	p {
+		color: lighten($black, 50%);
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+}
