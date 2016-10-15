@@ -22,29 +22,38 @@
 		color: $white;
 		text-decoration: none;
 	}
+
+	&:visited {
+		color: $white;
+	}
 }
 
 // Jumbotron
 .jumbotron {
 	position: relative;
 	top: 0;
-	background: image-url("bg1.jpg") no-repeat center center;
 	background-size: cover;
 	height: 880px;
 	margin: 0;
+	text-align: center;
 
-  	.col-md-6 {
-  		text-align: center;
-  		padding: 180px 0;
-
-		h1 {
-			text-align: center;
-			color: $white;
-			font-size: 64px;
-			font-weight: 300;
-			padding-bottom: 20px;
-		}
+	h1 {
+		padding-top: 150px;
+		text-align: center;
+		color: $white;
+		font-size: 64px;
+		font-weight: 300;
+		padding-bottom: 24px;
+		text-shadow: 1px 1px lighten($black, 10%);
 	}
+}
+
+.main .jumbotron {
+	background: image-url("bg1.jpg") no-repeat center center;
+}
+
+.about .jumbotron {
+	background: image-url("bg-about.jpg") no-repeat center center;
 }
 
 // Section text (Supporting, Discover)
@@ -52,23 +61,27 @@
 	background: $white;
 	color: $black;
 	margin: 0;
-	padding: 100px 0;
+	padding: 100px 120px;
 	text-align: center;
 
 	h1 {
 		font-size: 64px;
 		font-weight: 300;
-		padding-bottom: 12px;
+		padding-bottom: 20px;
 	}
 
 	p {
 		font-size: 30px;
 		font-weight: 300;
 	}
+
+	.btn {
+		margin-top: 30px;
+	}
 }
 
 .discover h1 {
-	padding-bottom: 30px;
+	padding-bottom: 0;
 }
 
 // Secondary
