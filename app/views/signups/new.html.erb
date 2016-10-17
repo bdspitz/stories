@@ -1,0 +1,23 @@
+<div class="signup-form">
+	<div class="jumbotron">
+		<div class="container-fluid">
+			<h1>Get the latest updates from Stories</h1>
+
+			<div class="container">
+				<%= form_for(@signup) do |f| %>  
+					<div class="field"> 
+						<%= f.label :signup, "First name" %><br> 
+						<%= f.text_field :firstname %> 
+					</div> 
+					<div class="field">
+						<%= f.label :signup, "Email" %><br> 
+						<%= f.text_field :email %> 
+					</div>				
+					<div class="actions"> 
+						<%= f.submit "Join", :class => 'signup-btn' %> 
+					</div>
+				<% end %>    
+			</div>
+		</div>
+	</div>
+</div>

@@ -10,9 +10,9 @@
 	border-radius: 0;
 	border: transparent;
 	color: $white;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 400;
-	padding: 12px 32px;
+	padding: 12px 30px;
 	@extend %transition-bg;
 	margin: 0 auto;
 
@@ -33,15 +33,15 @@
 	position: relative;
 	top: 0;
 	background-size: cover;
-	height: 880px;
+	height: 700px;
 	margin: 0;
 	text-align: center;
 
 	h1 {
-		padding-top: 150px;
+		padding-top: 100px;
 		text-align: center;
 		color: $white;
-		font-size: 64px;
+		font-size: 52px;
 		font-weight: 300;
 		padding-bottom: 24px;
 		text-shadow: 1px 1px lighten($black, 10%);
@@ -56,27 +56,32 @@
 	background: image-url("bg-about.jpg") no-repeat center center;
 }
 
+.signup-form .jumbotron, .thanks .jumbotron {
+	height: 800px;
+	background: image-url("bg-signup.jpg") no-repeat center center
+}
+
 // Section text (Supporting, Discover)
 .supporting, .discover {
 	background: $white;
 	color: $black;
 	margin: 0;
-	padding: 100px 120px;
+	padding: 80px 180px;
 	text-align: center;
 
 	h1 {
-		font-size: 64px;
+		font-size: 52px;
 		font-weight: 300;
 		padding-bottom: 20px;
 	}
 
 	p {
-		font-size: 30px;
+		font-size: 24px;
 		font-weight: 300;
 	}
 
 	.btn {
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 }
 
@@ -88,7 +93,7 @@
 .secondary {
 	background: image-url("bg2.jpg") no-repeat center center;
 	background-size: cover;
-	height: 600px;
+	height: 500px;
 	margin: 0;
 }
 
